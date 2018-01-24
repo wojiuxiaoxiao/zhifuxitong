@@ -1,0 +1,125 @@
+﻿#常用命令
+----
+提交所有修改文件到暂存区
+git add -A
+---- 
+查看当前状态
+git status 
+----
+提交并且加注释 
+git commit -am "init" 
+----
+查看操作日志
+git log
+----
+查看尚未暂存的更新
+git diff 
+----
+移除文件(从暂存区和工作区中删除)
+git rm a.a  之后git commit
+----
+强行移除修改后文件(从暂存区和工作区中删除)
+git rm -f a.a 
+----
+移除文件(只从暂存区中删除)
+git rm --cached a.a  之后git commit
+----
+查看尚未提交的更新
+git diff --cached 或 $ git diff --staged 
+----
+
+
+#远程仓库相关命令
+----
+检出远程仓库
+git clone git@github.com:wojiuxiaoxiao/xinkabang.git
+----
+查看远程仓库
+git remote -v
+----
+拉取远程仓库
+git pull
+----
+推送远程仓库
+git push
+----
+
+#分支相关命令
+----
+查看本地分支
+git branch
+----
+查看远程分支
+git branch -r
+----
+创建本地分支----注意新分支创建后不会自动切换为当前分支
+git branch [name] 
+----
+切换分支
+git checkout [name]
+----
+删除分支-d选项只能删除已经参与了合并的分支,-D强制删除
+git branch -d [name] 
+----
+合并分支----将名称为[name]的分支与当前分支合并
+git merge [name] 
+----
+创建远程分支(本地分支push到远程)
+git push origin [name]
+
+提交本地test分支作为远程的master分支
+git push origin test:master         
+----
+删除远程分支
+git push origin :[name] 
+----
+
+#tag相关命令操作
+----
+查看版本
+git tag
+----
+创建版本
+git tag [name]
+----
+删除版本
+git tag -d [name]
+----
+查看远程版本
+git tag -r
+----
+创建远程版本(本地版本push到远程)
+git push origin [name]
+----
+删除远程版本
+git push origin :refs/tags/[name]
+----
+合并远程仓库的tag到本地
+git pull origin --tags
+----
+上传本地tag到远程仓库
+git push origin --tags
+----
+创建带注释的tag
+git tag -a [name] -m 'yourMessage'
+----
+
+#创建忽略文件.gitignore,写入不需要的文件夹名或文件,每个元素占一行即可
+/storage/*.key
+/vendor
+.env
+
+
+
+#项目初始化
+mkdir WebApp
+cd WebApp
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:daixu/WebApp.git
+git push -u origin master
+
+
+
