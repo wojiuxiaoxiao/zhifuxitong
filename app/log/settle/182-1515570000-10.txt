@@ -1,0 +1,1 @@
+{"action":1,"code":"0000","msg":"成功","result":{"rt2_retCode":"0000","rt5_userId":"182","rt7_serialNumber":"22057127","rt6_orderId":"20180110153959372177","sign":"5464f193a0eb87210384b4f715ff6dbb","rt1_bizType":"SettlementCardWithdraw","rt4_customerNumber":"C1800169895","rt3_retMsg":"接收成功"}}

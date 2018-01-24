@@ -1,0 +1,1 @@
+{"action":0,"code":"8015","msg":"短信验证码错误或已过期","result":{"rt10_bindId":"","rt2_retCode":"8015","rt5_userId":"102","rt6_orderId":"20180111171528863895","rt7_bindStatus":"FAIL","rt11_serialNumber":"","sign":"53879a8c200cdae3ef8b20e77edee621","rt1_bizType":"QuickPayBindCard","rt4_customerNumber":"C1800169895","rt8_bankId":"","rt3_retMsg":"短信验证码错误或已过期","rt9_cardAfterFour":"1296"}}

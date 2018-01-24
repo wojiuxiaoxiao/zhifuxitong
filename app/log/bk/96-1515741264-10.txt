@@ -1,0 +1,1 @@
+{"action":0,"code":"8001","msg":"CVV2不能为空","result":{"rt10_bindId":"","rt2_retCode":"8001","rt5_userId":"96","rt6_orderId":"20180112151423269932","rt7_bindStatus":"FAIL","rt11_serialNumber":"","sign":"3f509d9894ec3814af15a2f58d536b81","rt1_bizType":"QuickPayBindCard","rt4_customerNumber":"C1800169895","rt8_bankId":"","rt3_retMsg":"CVV2不能为空","rt9_cardAfterFour":"6027"}}
